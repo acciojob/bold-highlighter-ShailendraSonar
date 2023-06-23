@@ -1,24 +1,19 @@
 function highlight() {
-    //Write your code here
-
-    var strong = document.getElementsByTagName('strong');
-    
-    for(var i in strong){
-        strong[i].style.color = 'green';
+  const boldWords = document.getElementsByTagName('strong');
+  
+  if (boldWords.length > 0) {
+    for (let i = 0; i < boldWords.length; i++) {
+      boldWords[i].style.color = 'green';
     }
-
-
+  }
 }
 
-
 function return_normal() {
-    //Write your code here
-   
-
-    var strong = document.getElementsByTagName('strong');
-    
-    for(var i in strong){
-        strong[i].style.color = 'black';
+  const boldWords = document.getElementsByTagName('strong');
+  
+  if (boldWords.length > 0) {
+    for (let i = 0; i < boldWords.length; i++) {
+      boldWords[i].style.color = 'black';
     }
-
+  }
 }
